@@ -1,0 +1,25 @@
+# Site settings
+title: Benjamin Cooper
+header-img: img/home-bg.jpg
+email: bencooper222@gmail.com
+copyright_name: Benjamin Cooper
+description: "A personal website for Benjamin Cooper"
+baseurl: ""
+url: "http://yourdomain.com"
+twitter_username: benc222
+github_username:  bencooper222
+email_username:  bencooper222@gmail.com
+linkedin_username: benc222
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
