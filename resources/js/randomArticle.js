@@ -11,13 +11,15 @@ let articleLinks = ["http://waitbutwhy.com/2014/05/fermi-paradox.html",
     "http://www.slate.com/blogs/the_slatest/2015/06/26/supreme_court_legalizes_gay_marriage_here_is_the_beautiful_last_paragraph.html",
     "https://www.dailykos.com/stories/2014/9/10/1328813/-The-Astonishing-Story-of-the-Federal-Reserve-on-9-11",
     "https://chihacknight.org/blog/2015/11/23/10-lessons-from-organizing-the-chi-hack-night.html",
-    "http://firstround.com/review/Asanas-Justin-Rosenstein-on-the-One-Quality-Every-Startup-Needs-to-Survive/"
+    "http://firstround.com/review/Asanas-Justin-Rosenstein-on-the-One-Quality-Every-Startup-Needs-to-Survive/",
+    "https://www.troyhunt.com/on-the-perceived-value-ev-certs-cas-phishing-lets-encrypt/",
+    "https://content.time.com/time/subscriber/article/0,33009,2136864,00.html",
+    "https://www.theatlantic.com/technology/archive/2015/07/the-secret-startup-saved-healthcare-gov-the-worst-website-in-america/397784/"
 ]; // who needs config variables?
 
 let link = document.getElementById("link");
 
-link.addEventListener("click",function(){
-    link.href = articleLinks[Math.floor(Math.random() * articleLinks.length)];
-    //console.log(link.href);
-    
-})
+link.addEventListener("click", function() {
+
+    window.open(articleLinks[Math.floor(Math.random() * articleLinks.length)],'_blank');
+});
