@@ -6,13 +6,18 @@ let articleLinks = ["http://waitbutwhy.com/2014/05/fermi-paradox.html",
     "https://www.poetryfoundation.org/poems/46565/ozymandias",
     "https://www.nps.gov/stli/learn/historyculture/colossus.htm",
     "https://waitbutwhy.com/2015/11/the-cook-and-the-chef-musks-secret-sauce.html",
-    "https://www.theatlantic.com/magazine/archive/2016/04/the-obama-doctrine/471525/"
+    "https://www.theatlantic.com/magazine/archive/2016/04/the-obama-doctrine/471525/",
+    "http://fivethirtyeight.com/features/science-isnt-broken/",
+    "http://www.slate.com/blogs/the_slatest/2015/06/26/supreme_court_legalizes_gay_marriage_here_is_the_beautiful_last_paragraph.html",
+    "https://www.dailykos.com/stories/2014/9/10/1328813/-The-Astonishing-Story-of-the-Federal-Reserve-on-9-11",
+    "https://chihacknight.org/blog/2015/11/23/10-lessons-from-organizing-the-chi-hack-night.html",
+    "http://firstround.com/review/Asanas-Justin-Rosenstein-on-the-One-Quality-Every-Startup-Needs-to-Survive/"
 ]; // who needs config variables?
 
 let link = document.getElementById("link");
 
 link.addEventListener("click",function(){
     link.href = articleLinks[Math.floor(Math.random() * articleLinks.length)];
-    console.log(link.href);
+    //console.log(link.href);
     
 })
