@@ -38,3 +38,7 @@ body {
 .red{
     color: #cf0000;
 }
+
+#link{
+  cursor: pointer;
+}

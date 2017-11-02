@@ -10,8 +10,9 @@ let articleLinks = ["http://waitbutwhy.com/2014/05/fermi-paradox.html",
 ]; // who needs config variables?
 
 let link = document.getElementById("link");
-link.href = articleLinks[Math.floor(Math.random() * articleLinks.length)];
 
-console.log(link.href);
-
-
+link.addEventListener("click",function(){
+    link.href = articleLinks[Math.floor(Math.random() * articleLinks.length)];
+    console.log(link.href);
+    
+})
