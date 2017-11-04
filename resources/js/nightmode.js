@@ -74,8 +74,8 @@ function getSunriseSunsetTimes() { // returns Promise in UTC
         }).then((response) => {
             return response.json();
         }).then((data) => {
-            let civilBegin = moment.utc(data.results.civil_twilight_begin).tz(moment.tz.guess()).format('ha z');
-            let civilEnd = moment.utc(data.results.civil_twilight_end).tz(moment.tz.guess()).format('ha z');
+            let civilBegin = moment.utc(data.results.civil_twilight_begin).tz(moment.tz.guess());
+            let civilEnd = moment.utc(data.results.civil_twilight_end).tz(moment.tz.guess());
 
             let civilTimes = {
                 "begin": civilBegin,
@@ -95,6 +95,7 @@ function getPosition(options) {
 
 getSunriseSunsetTimes().then(function(data){
     let now = moment();
+    console.log(now);
     console.log(data);
     if(now.isAfter(data.begin) &&  now.isBefore(data.end)){
        makeDay();

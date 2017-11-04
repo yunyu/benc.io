@@ -54,9 +54,8 @@ i {
 
 #article-prompt {
   margin-top: 3%; }
-
-#article-prompt h3 {
-  margin-top: .2em; }
+  #article-prompt h3 {
+    margin-top: .2em; }
 
 #link {
   color: rebeccapurple; }
