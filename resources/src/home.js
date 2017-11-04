@@ -57,21 +57,33 @@ function makeNight() {
 
 }
 
-function getSunriseSunsetTimes() {
-    getPosition().then((position) => {
+function getSunriseSunsetTimes() { // returns Promise in UTC
 
-        return position.coords;
-    }).then((coords) => {
-        let url = new URL("https://geo.example.org/api");
-        let params = { lat: coords.latitude, lng: coords.longitude }
-        Object.keys(params).forEach(key => url.searchParams.append(key, params[key])); // why does fetch have nothing for qs? Who knows
-
-        fetch('url', {
-            method: 'GET'
+    return fetch("https://freegeoip.net/json/")
+        .then((location) => {
+            return location.json();
         })
-    }).then((response) => {
-        console.log(response);
-    });
+        .then((coords) => {
+            let url = new URL("https://api.sunrise-sunset.org/json");
+            let params = { lat: coords.latitude, lng: coords.longitude, formatted: 0 }
+            Object.keys(params).forEach(key => url.searchParams.append(key, params[key])); // why does fetch have nothing for qs? Who knows
+
+            return fetch(url, {
+                method: 'GET'
+            })
+        }).then((response) => {
+            return response.json();
+        }).then((data) => {
+            let civilBegin = moment.utc(data.results.civil_twilight_begin).tz(moment.tz.guess()).format('ha z');
+            let civilEnd = moment.utc(data.results.civil_twilight_end).tz(moment.tz.guess()).format('ha z');
+
+            let civilTimes = {
+                "begin": civilBegin,
+                "end": civilEnd
+            }
+            
+            return civilTimes;
+        });
 }
 
 
@@ -80,3 +92,14 @@ function getPosition(options) {
         navigator.geolocation.getCurrentPosition(resolve, reject, options);
     });
 }
+
+getSunriseSunsetTimes().then(function(data){
+    let now = moment();
+    console.log(data);
+    if(now.isAfter(data.begin) &&  now.isBefore(data.end)){
+       makeDay();
+    }
+    else{
+        makeNight();
+    }
+});
