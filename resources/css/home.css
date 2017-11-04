@@ -1,6 +1,7 @@
 body {
   background-color: black;
-  color: white; }
+  color: white;
+  margin: 0; }
 
 h1 {
   font-family: 'Slabo 27px', serif;
@@ -17,6 +18,9 @@ h3 {
   margin-top: 0px;
   margin-bottom: 0px; }
 
+h3 {
+  font-size: 1.2em; }
+
 #headers {
   margin-top: 15%; }
 
@@ -24,7 +28,7 @@ h3 {
   margin-left: 10%; }
 
 .icon-spacing {
-  margin-left: 20px; }
+  margin-left: 22px; }
 
 i {
   margin-bottom: 10px;
@@ -33,11 +37,32 @@ i {
   margin-top: 15px; }
 
 #icons {
+  margin-top: .2%;
   text-align: left;
   display: inline-block;
   width: 300px; }
 
 #reach {
   margin-top: 10px; }
+
+#toggle {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin: 0;
+  margin-left: 31.25%; }
+
+#article-prompt {
+  margin-top: 3%; }
+
+#article-prompt h3 {
+  margin-top: .2em; }
+
+#link {
+  color: rebeccapurple; }
+
+#link:hover {
+  text-decoration: underline;
+  cursor: pointer; }
 
 /*# sourceMappingURL=home.css.map */
