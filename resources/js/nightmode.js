@@ -57,7 +57,7 @@ function makeNight() {
 
 }
 
-function getSunriseSunsetTimes() { // returns Promise in UTC
+function getSunriseSunsetTimes() {
 
     return fetch("https://freegeoip.net/json/")
         .then((location) => {
@@ -81,7 +81,7 @@ function getSunriseSunsetTimes() { // returns Promise in UTC
                 "begin": civilBegin,
                 "end": civilEnd
             }
-            
+
             return civilTimes;
         });
 }
@@ -93,14 +93,13 @@ function getPosition(options) {
     });
 }
 
-getSunriseSunsetTimes().then(function(data){
+getSunriseSunsetTimes().then(function(data) {
     let now = moment();
-    console.log(now);
-    console.log(data);
-    if(now.isAfter(data.begin) &&  now.isBefore(data.end)){
-       makeDay();
-    }
-    else{
+    if (now.isAfter(data.begin) && now.isBefore(data.end)) {
+        console.log("It is between: " + data.begin.format("MMMM Do YYYY, h:mm:ss a") + " and " + data.end.format("MMMM Do YYYY, h:mm:ss a"));
+        makeDay();
+    } else {
+        console.log("It is either before " + data.begin.format("MMMM Do YYYY, h:mm:ss a") + " or after " + data.end.format("MMMM Do YYYY, h:mm:ss a"));
         makeNight();
     }
 });
