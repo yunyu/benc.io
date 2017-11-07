@@ -19,9 +19,19 @@ const articleLinks = ["http://waitbutwhy.com/2014/05/fermi-paradox.html",
     "http://www.motherjones.com/politics/2016/06/cca-private-prisons-corrections-corporation-inmates-investigation-bauer/"
 ]; // who needs config variables?
 
+let articleLinksTemp = articleLinks;
 const link = document.getElementById("link");
 
 link.addEventListener("click", function() {
+    if (articleLinksTemp.length === 0) { // if it's somehow empty, repopulate
+        articleLinksTemp = articleLinks;
+    }
 
-    window.open(articleLinks[Math.floor(Math.random() * articleLinks.length)],'_blank');
+    let rand = Math.floor(Math.random() * articleLinks.length);
+    let article = articleLinksTemp[rand]; // select article
+
+    articleLinksTemp.splice(rand, 1); //remove from selection
+
+    window.open(article, '_blank');
+    
 });
