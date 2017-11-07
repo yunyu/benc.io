@@ -15,7 +15,8 @@ const articleLinks = ["http://waitbutwhy.com/2014/05/fermi-paradox.html",
     "https://www.troyhunt.com/on-the-perceived-value-ev-certs-cas-phishing-lets-encrypt/",
     "https://content.time.com/time/subscriber/article/0,33009,2136864,00.html",
     "https://www.theatlantic.com/technology/archive/2015/07/the-secret-startup-saved-healthcare-gov-the-worst-website-in-america/397784/",
-    "https://www.theatlantic.com/education/archive/2017/11/the-surprising-revolt-at-reed/544682/?utm_source=vxfb"
+    "https://www.theatlantic.com/education/archive/2017/11/the-surprising-revolt-at-reed/544682/?utm_source=vxfb",
+    "http://www.motherjones.com/politics/2016/06/cca-private-prisons-corrections-corporation-inmates-investigation-bauer/"
 ]; // who needs config variables?
 
 const link = document.getElementById("link");
