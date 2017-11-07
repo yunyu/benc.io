@@ -1,4 +1,4 @@
-let articleLinks = ["http://waitbutwhy.com/2014/05/fermi-paradox.html",
+const articleLinks = ["http://waitbutwhy.com/2014/05/fermi-paradox.html",
     "http://www.freedomtomarry.org/pages/how-it-happened",
     "https://12factor.net/",
     "https://www.martincwiner.com/wp-content/uploads/2011/06/The-Last-Question-Isaac-Asimov.pdf",
@@ -14,10 +14,11 @@ let articleLinks = ["http://waitbutwhy.com/2014/05/fermi-paradox.html",
     "http://firstround.com/review/Asanas-Justin-Rosenstein-on-the-One-Quality-Every-Startup-Needs-to-Survive/",
     "https://www.troyhunt.com/on-the-perceived-value-ev-certs-cas-phishing-lets-encrypt/",
     "https://content.time.com/time/subscriber/article/0,33009,2136864,00.html",
-    "https://www.theatlantic.com/technology/archive/2015/07/the-secret-startup-saved-healthcare-gov-the-worst-website-in-america/397784/"
+    "https://www.theatlantic.com/technology/archive/2015/07/the-secret-startup-saved-healthcare-gov-the-worst-website-in-america/397784/",
+    "https://www.theatlantic.com/education/archive/2017/11/the-surprising-revolt-at-reed/544682/?utm_source=vxfb"
 ]; // who needs config variables?
 
-let link = document.getElementById("link");
+const link = document.getElementById("link");
 
 link.addEventListener("click", function() {
 
