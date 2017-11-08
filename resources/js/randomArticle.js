@@ -16,7 +16,8 @@ const articleLinks = ["http://waitbutwhy.com/2014/05/fermi-paradox.html",
     "https://content.time.com/time/subscriber/article/0,33009,2136864,00.html",
     "https://www.theatlantic.com/technology/archive/2015/07/the-secret-startup-saved-healthcare-gov-the-worst-website-in-america/397784/",
     "https://www.theatlantic.com/education/archive/2017/11/the-surprising-revolt-at-reed/544682/?utm_source=vxfb",
-    "http://www.motherjones.com/politics/2016/06/cca-private-prisons-corrections-corporation-inmates-investigation-bauer/"
+    "http://www.motherjones.com/politics/2016/06/cca-private-prisons-corrections-corporation-inmates-investigation-bauer/",
+    "https://www.nytimes.com/interactive/2017/01/18/upshot/some-colleges-have-more-students-from-the-top-1-percent-than-the-bottom-60.html"
 ]; // who needs config variables?
 
 let articleLinksTemp = articleLinks;
