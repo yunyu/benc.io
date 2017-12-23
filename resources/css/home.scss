@@ -8,7 +8,10 @@ body {
 }
 
 h1 {
-    font-family: 'Slabo 27px', serif;
+    //font-family: 'Slabo 27px', serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;    
+    
     color: rebeccapurple;
     font-size: 4.5em;
     margin-bottom: 0px;
@@ -16,11 +19,15 @@ h1 {
     -webkit-margin-after: .2em;
     -webkit-margin-before: .2em;
     
+
+
 }
 
 h2,
 h3 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+    font-weight: 400;
     margin-top: 0px;
     margin-bottom: 0px;
 }
