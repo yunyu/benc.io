@@ -4,18 +4,18 @@ body {
   margin: 0; }
 
 h1 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   color: rebeccapurple;
   font-size: 4.5em;
   margin-bottom: 0px;
   margin-top: 0px;
-  -webkit-margin-after: .2em;
-  -webkit-margin-before: .2em; }
+  -webkit-margin-after: 0.2em;
+  -webkit-margin-before: 0.2em; }
 
 h2,
 h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin-top: 0px;
   margin-bottom: 0px; }
@@ -39,10 +39,10 @@ i {
   margin-top: 15px; }
 
 #icons {
-  margin-top: .2%;
+  margin-top: 0.2%;
   text-align: left;
   display: inline-block;
-  width: 300px; }
+  width: 360px; }
 
 #reach {
   margin-top: 10px; }
@@ -57,7 +57,7 @@ i {
 #article-prompt {
   margin-top: 3%; }
   #article-prompt h3 {
-    margin-top: .2em; }
+    margin-top: 0.2em; }
 
 #link {
   color: rebeccapurple; }
@@ -65,5 +65,21 @@ i {
 #link:hover {
   text-decoration: underline;
   cursor: pointer; }
+
+#signature {
+  fill: rebeccapurple; }
+
+svg.not-fa {
+  background-color: transparent;
+  fill: currentColor;
+  width: 2em;
+  height: 2.14929577em;
+  color: white;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased; }
+
+svg.not-fa::before {
+  content: "\f003"; }
 
 /*# sourceMappingURL=home.css.map */

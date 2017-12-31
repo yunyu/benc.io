@@ -1,93 +1,110 @@
 $background: 0; // 255 to default night, 0 to default day
 
-
 body {
-    background-color: rgb(255-$background, 255-$background, 255-$background);
-    color: rgb($background, $background, $background);
-    margin: 0;
+  background-color: rgb(255-$background, 255-$background, 255-$background);
+  color: rgb($background, $background, $background);
+  margin: 0;
 }
 
 h1 {
-    //font-family: 'Slabo 27px', serif;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;    
-    
-    color: rebeccapurple;
-    font-size: 4.5em;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    -webkit-margin-after: .2em;
-    -webkit-margin-before: .2em;
-    
+  //font-family: 'Slabo 27px', serif;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
 
-
+  color: rebeccapurple;
+  font-size: 4.5em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  -webkit-margin-after: 0.2em;
+  -webkit-margin-before: 0.2em;
 }
 
 h2,
 h3 {
-    font-family: 'Roboto', sans-serif;
-    
-    font-weight: 400;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-h3{
-    font-size: 1.2em;
+h3 {
+  font-size: 1.2em;
 }
 
 #headers {
-    margin-top: 15%;
+  margin-top: 15%;
 }
 
 .shift-right {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
 .icon-spacing {
-    margin-left: 22px;
+  margin-left: 22px;
 }
 
 i {
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: rgb($background, $background, $background);
-    margin-top: 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: rgb($background, $background, $background);
+  margin-top: 15px;
 }
 
 #icons {
-    // position: fixed;
-    //bottom: 0;
-    margin-top: .2%;
-    text-align: left;
-    display: inline-block;
-    width: 300px;
+  // position: fixed;
+  //bottom: 0;
+  margin-top: 0.2%;
+  text-align: left;
+  display: inline-block;
+  width: 360px;
 }
 
 #reach {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #toggle {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    margin: 0;  
-    margin-left: 300px / 960px * 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin: 0;
+  margin-left: 300px / 960px * 100%;
 }
 
-#article-prompt{
-    margin-top: 3%;
-    h3{
-        margin-top: .2em;
-    }
+#article-prompt {
+  margin-top: 3%;
+  h3 {
+    margin-top: 0.2em;
+  }
 }
 
-
-#link{
-    color: rebeccapurple;
+#link {
+  color: rebeccapurple;
 }
 
-#link:hover{
-    text-decoration: underline;
-    cursor: pointer;
+#link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#signature{
+   
+    fill: rebeccapurple;
+}
+
+svg.not-fa{
+  
+    background-color: transparent;
+    fill: currentColor;
+    width: 2em;
+    height: 2.14929577em; // it's technically not quite a square
+    color: white;
+    display: inline-block;
+    text-rendering:auto;
+    -webkit-font-smoothing: antialiased;
+   
+}
+
+svg.not-fa::before{
+  content: "\f003";
 }
