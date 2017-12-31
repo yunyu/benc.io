@@ -4,7 +4,7 @@ const changeBackground = document.getElementsByTagName("body");
 const changeColor = colorToChangeElements();
 
 function colorToChangeElements() {
-  let icons = document.getElementsByTagName("i");
+  let icons = document.getElementsByTagName("i").concat(document.getElementsByClassName('not-fa'));
   let h2 = document.getElementsByTagName("h2");
   let h3 = document.getElementsByTagName("h3");
 

@@ -98,7 +98,7 @@ svg.not-fa{
     fill: currentColor;
     width: 2em;
     height: 2.14929577em; // it's technically not quite a square
-    color: white;
+    color: rgb($background, $background, $background);
     display: inline-block;
     text-rendering:auto;
     -webkit-font-smoothing: antialiased;
