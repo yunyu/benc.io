@@ -4,11 +4,13 @@ const changeBackground = document.getElementsByTagName("body");
 const changeColor = colorToChangeElements();
 
 function colorToChangeElements() {
-  let icons = document.getElementsByTagName("i").concat(document.getElementsByClassName('not-fa'));
+  let icons = document.getElementsByTagName("i");
+  let svgs = document.getElementsByClassName("not-fa");
+
   let h2 = document.getElementsByTagName("h2");
   let h3 = document.getElementsByTagName("h3");
 
-  return addArrays([icons, h2, h3]);
+  return addArrays([icons, h2, h3, svgs]);
 }
 
 function addArrays(arrays) {
@@ -47,6 +49,7 @@ function makeNight() {
 function getSunriseSunsetTimes() {
   return fetch("https://freegeoip.net/json/")
     .then(location => {
+      console.log(location.json());
       return location.json();
     })
     .then(coords => {
@@ -83,7 +86,6 @@ function getSunriseSunsetTimes() {
       return civilTimes;
     });
 }
-
 
 getSunriseSunsetTimes().then(function(data) {
   let now = moment();

