@@ -49,10 +49,11 @@ function makeNight() {
 function getSunriseSunsetTimes() {
   return fetch("https://freegeoip.net/json/")
     .then(location => {
-      console.log(location.json());
+      
       return location.json();
     })
     .then(coords => {
+      console.log(coords);
       let url = new URL("https://api.sunrise-sunset.org/json");
       let params = {
         lat: coords.latitude,
