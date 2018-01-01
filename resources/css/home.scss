@@ -108,3 +108,7 @@ svg.not-fa{
 svg.not-fa::before{
   content: "\f003";
 }
+
+span.strike{
+  text-decoration: line-through;
+}
