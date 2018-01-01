@@ -49,35 +49,19 @@ function makeNight() {
 function getSunriseSunsetTimes() {
   return fetch("https://freegeoip.net/json/")
     .then(location => {
-      
       return location.json();
     })
     .then(coords => {
-      console.log(coords);
-      let url = new URL("https://api.sunrise-sunset.org/json");
-      let params = {
-        lat: coords.latitude,
-        lng: coords.longitude,
-        formatted: 0
-      };
-      Object.keys(params).forEach(key =>
-        url.searchParams.append(key, params[key])
-      ); // why does fetch have nothing for qs? Who knows
-
-      return fetch(url, {
-        method: "GET"
-      });
-    })
-    .then(response => {
-      return response.json();
+      let sunTimes = SunCalc.getTimes(
+        new Date(),
+        coords.latitude,
+        coords.longitude
+      );
+      return { start: sunTimes.dawn, stop: sunTimes.sunset };
     })
     .then(data => {
-      let civilBegin = moment
-        .utc(data.results.civil_twilight_begin)
-        .tz(moment.tz.guess());
-      let civilEnd = moment
-        .utc(data.results.civil_twilight_end)
-        .tz(moment.tz.guess());
+      let civilBegin = moment.tz(data.start, moment.tz.guess());
+      let civilEnd = moment.tz(data.stop, moment.tz.guess());
 
       let civilTimes = {
         begin: civilBegin,
