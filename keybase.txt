@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/benc222
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://benc.io
+  * I am benc222 (https://keybase.io/benc222) on keybase.
+  * I have a public key with fingerprint 5D1E 387D 6850 4233 F7DC  CE1E B095 CA8B 5707 A55D
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101f53cf4f368342e9568129402cc829a375a97fb016b6e48d3ca2a04e227f160a60a",
+      "fingerprint": "5d1e387d68504233f7dcce1eb095ca8b5707a55d",
+      "host": "keybase.io",
+      "key_id": "b095ca8b5707a55d",
+      "kid": "0101f53cf4f368342e9568129402cc829a375a97fb016b6e48d3ca2a04e227f160a60a",
+      "uid": "8f128bacf9aac9ad763bfdb606120d19",
+      "username": "benc222"
+    },
+    "service": {
+      "hostname": "benc.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1514944368,
+  "expire_in": 157680000,
+  "prev": "1855fe6051eb10c7978cc3d973d76499b4b2b536540165c0baf08433461c097c",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMIjAnicrVJrSFRBGN1ttYdltgQZiCmXEBKpuY+5j0WoyIxCjbIUTdrmzp273rS9
+2+7VMlmjH4qZVqR/gkDKlJ5SsEVokGYQYQ+s1EWFqIQglITCBEmbawX96GfDwDAf
+55zvnI/vSbzLEecciu4v2daeecXZ33uhwlGcIwWqGdXUqhhPNVNGFh5SrpGQ5S0z
+NMbDABawOuSxLui8KPMCRxQoyiynCIDDWOYUxEsQKZKuAlZURSLIGo8Rh4BAOE7S
+WREgepkMRjf8PhIMBA2/RWWhxhJeljRRhkDgeF6XNIwJS1SgQIxkFUpAQhBqlFhq
+hmwGNaeiENlomLRGP94Fe//A/2ffFQtyss5ysoqwriCEFaRJIq/qmioCkeWAxio2
+MESCfnSE2K6IH3Mcx4QzGFqsNDCx52oH+QvwK0kgaFomNstpsdSyAiGPTbKqAjbq
+GFG9v/le1fBrdIKUUUmCIcP0Mx6WIrFl2IIsZAVFEGjSDIYcDxhB4jVsBJREGdBj
+9yGVVJKVIdSJCCAdNQuwpEgyxrymSDyNJCiKKqicCnkRCnQsEAMV6UAWeF4QWQwU
+CTN2oqN+k2rTVhbyUc2Q4fMjqyJImPDjnpIYhzPOsTh2kb1ajrhlq/4snHF1yY+k
+dbmpcHLaXTj6piG2Y86991Z1+eeY7ubeiDX28qYnszB9Q1bd2/2N6EFV4qvpsQ+X
+s9LvtJ1ImMjaurSzcfj1QO/O+Zsdy+/lD2RGnk3W1I009bwbrky7vitttvBpUSLa
+3J07FBmNP7O+OHtHf/TwyPD4iuRBV53rZPTsQdf3/KaC0wlm3nlmYDCS7t0UWdQ6
+DvNmEgF/oIVJeZFTVL921bk9DwNdXX3qPqNt01fft/ff5ls73AXPp4y+NcrY7kPt
+syubmZyPd5MfhcdDtbVzqPPL9vaphPr74dXXwJYXztTPN7KjLXOf+KnSmWjSe9el
+20dTalobtItr3BOnuq5aFT8BcbQ/3Q==
+=mL3k
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/benc222
+
+==================================================================
