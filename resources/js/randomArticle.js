@@ -39,4 +39,5 @@ link.addEventListener("click", function() {
 
   window.open(article, "_blank");
   articleLinksTemp.splice(rand, 1); //remove from selection
+  link.innerHTML = 'another reading'; // add animation in future?
 });
