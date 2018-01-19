@@ -82,6 +82,7 @@ getSunriseSunsetTimes().then(function(data) {
         data.end.format("MMMM Do YYYY, h:mm:ss a")
     );
     makeDay();
+    setLocalStorage("day", data.begin, data.end);
   } else {
     console.log(
       "It is either before " +
@@ -89,6 +90,28 @@ getSunriseSunsetTimes().then(function(data) {
         " or after " +
         data.end.format("MMMM Do YYYY, h:mm:ss a")
     );
+
     makeNight();
+    setLocalStorage("night", data.begin, data.end);
   }
 });
+
+function setLocalStorage(state, startDayTime, endDayTime) {
+  let toStore = {};
+  toStore.tz = startDayTime.tz();
+  if (state === "day") {
+    toStore.state = "day";
+    toStore.until = endDayTime.format();
+    toStore.then = "night";
+  } else if (state === "night") {
+    if (moment().isBefore(endDayTime)) {
+      toStore.state = "night";
+      toStore.until = startDayTime.format();
+      toStore.then = "day";
+    } else {
+      toStore.then = "recalculate";
+    }
+  }
+
+  localStorage.setItem("state", JSON.stringify(toStore));
+}
