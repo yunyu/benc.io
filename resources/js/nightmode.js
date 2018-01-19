@@ -100,9 +100,9 @@ function calculateCorrectState() {
 
 function setState() {
   let cache;
-  try {
-    cache = JSON.parse(localStorage.getItem("state"));
-  } catch (err) {
+
+  cache = JSON.parse(localStorage.getItem("state"));
+  if (cache === null) {
     console.log("No cache, manual calculations");
     calculateCorrectState();
     return;
