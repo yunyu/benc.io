@@ -107,11 +107,7 @@ function setState() {
     calculateCorrectState();
     return;
   }
-  if (cache.then === "recalculate") {
-    console.log("Cache designated recalculate");
-    calculateCorrectState();
-    return;
-  }
+ 
   if (moment.tz.guess() !== cache.tz) {
     console.log("Cache indicated changed timezone.");
     calculateCorrectState();
@@ -138,7 +134,7 @@ function stateSwicher(state) {
     case "night":
       makeNight();
       break;
-    default:
+    default: //recalculate included
       calculateCorrectState();
       break;
   }
@@ -157,10 +153,12 @@ function setLocalStorage(state, startDayTime, endDayTime) {
       toStore.until = startDayTime.format();
       toStore.then = "day";
     } else {
+      toStore.state = "night";
+      toStore.until = moment().endOf('day');
       toStore.then = "recalculate";
     }
   }
-
+  
   localStorage.setItem("state", JSON.stringify(toStore));
 }
 
