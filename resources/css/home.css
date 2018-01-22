@@ -60,7 +60,8 @@ i {
     margin-top: 0.2em; }
 
 #link {
-  color: rebeccapurple; }
+  color: rebeccapurple;
+  font-weight: bold; }
 
 #link:hover {
   text-decoration: underline;
