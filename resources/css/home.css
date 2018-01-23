@@ -30,7 +30,7 @@ h3 {
   margin-left: 10%; }
 
 .icon-spacing {
-  margin-left: 22px; }
+  margin-right: 22px; }
 
 i {
   margin-bottom: 10px;
@@ -41,8 +41,7 @@ i {
 #icons {
   margin-top: 0.2%;
   text-align: left;
-  display: inline-block;
-  width: 360px; }
+  display: inline-block; }
 
 #reach {
   margin-top: 10px; }
@@ -60,7 +59,8 @@ i {
     margin-top: 0.2em; }
 
 #link {
-  color: rebeccapurple; }
+  color: rebeccapurple;
+  font-weight: bold; }
 
 #link:hover {
   text-decoration: underline;
