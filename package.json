@@ -1,0 +1,18 @@
+{
+  "name": "benc.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bencooper222/benc.io.git",
+  "license": "MIT",
+  "scripts":{
+     "dev": "parcel index.html",
+     "build": "parcel build index.html" 
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0"
+  }
+}
