@@ -1,2 +1,3 @@
-command = "parcel build index.html -d build/"
-publish = "build/"
+[build]
+  publish = "build/"
+  command = "parcel build index.html -d build/"
