@@ -65,3 +65,6 @@ typings/
 
 # parcel build
 build/
+
+# parcel dev
+dist/
